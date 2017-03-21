@@ -52,6 +52,19 @@ p {
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
+/************* Added *************/
+.text-lighter {
+  color: rgba(34, 34, 34, 0.6);
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.3px;
+}
+
+.text-light {
+  color: rgba(34, 34, 34, 0.6);
+  letter-spacing: 1px;
+}
+/************** Thats it ************/
 section {
   padding: 100px 0;
 }
@@ -298,11 +311,13 @@ header .header-content .header-content-inner p {
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
-.text-primary {
+.text-primary,
+.service {
   color: #F05F40;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.8em;
   line-height: 2.5em;
+  font-style: normal;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -434,4 +449,19 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+/************* Extras ***********/
+
+.tab-content {
+  padding: 0 35px;
+}
+
+ul.we-do > li {
+  list-style-type: none;
+}
+
+ul.we-do > li > h4 {
+  text-transform: uppercase;
+  margin: 1.5em 0;
 }
