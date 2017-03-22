@@ -42,6 +42,11 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
+/********** Added *********/
+h1.intro {
+  color: #222222;
+}
 .bg-primary {
   background-color: #F05F40;
 }
@@ -51,6 +56,8 @@ p {
 }
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+  line-height: 2em;
 }
 /************* Added *************/
 .text-lighter {
@@ -102,7 +109,7 @@ aside {
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   color: #222222;
 }
 .navbar-default .nav > li > a:hover,
@@ -175,7 +182,7 @@ header {
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
+  padding: 75px 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
@@ -200,7 +207,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -213,6 +220,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner h1 {
     font-size: 40px;
+    text-shadow: -1px -1px 1px #F05F40;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -221,23 +229,28 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
   /* *********  Addional CSS  *********** */
-  header .header-content-inner {
-    padding-top: 60px;
+  header .header-content .header-content-inner h2 {
+    font-size: 30px;
+   /* text-shadow: -1px -1px 0px #F05F40;*/
   }
-  header img {
-    /*margin-bottom: 100px;*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
+
 /*  header .header-content-inner h1 {
     padding-top: 100px;
   }*/
 /*  .intro {
     margin-bottom: 100px;
   }*/
+}
+
+header img {
+  /*margin-bottom: 100px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: solid 2px #F05F40;
+  border-radius: 80px;
 }
 .section-heading {
   margin-top: 0;
@@ -457,11 +470,122 @@ body {
   padding: 0 35px;
 }
 
+ul.we-do {
+  padding-left: 20px;
+}
+
 ul.we-do > li {
   list-style-type: none;
+  padding-left: 0;
 }
 
 ul.we-do > li > h4 {
   text-transform: uppercase;
   margin: 1.5em 0;
+}
+
+
+
+@media (max-width: 1199px) {
+  img.finance {
+    width: 145px;
+  }
+  .text-primary {
+    font-size: 1.1em;
+  }
+  .nav-tabs > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+  }
+  .nav-tabs {
+    text-align: center;
+ /*   width: 750px;*/
+  }
+  h3.service {
+    font-size: 1.5em
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  .text-lighter {
+    font-size: 0.9em;
+  }
+  .text-light {
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .nav-tabs {
+    text-align: center;
+    width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  img.finance {
+    display: none;
+  }
+  .text-primary {
+    font-size: 1em;
+  }
+  .nav-tabs {
+    text-align: center;
+    width: auto;
+  }
+  h3.service {
+    font-size: 1.2em
+  }
+  h4 {
+    font-size: 1em;
+  }
+  .text-lighter {
+    font-size: 0.8em;
+  }
+  .text-light,
+  .text-faded {
+    font-size: 0.9em;
+  }
+  header img {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 110px;
+   /* border-radius: 80px;*/
+  }
+  .header-content-inner h2 {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+  .header-content-inner h1 {
+    text-shadow: -0.5px -0.5px 0.5px #F05F40;
+  }
+}
+
+@media (max-width: 546px) {
+  .text-primary {
+    font-size: 0.8em;
+  }
+  #page-top a.tab-link {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 432px) {
+  #page-top a.tab-link {
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 393px) {
+  .text-primary {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 355px) {
+  .text-primary {
+    font-size: 0.6em;
+  }
 }

@@ -1,0 +1,68 @@
+.tab-content {
+  padding: 0 35px;
+}
+
+ul.we-do > li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.we-do > li > h4 {
+  text-transform: uppercase;
+  margin: 1.5em 0;
+}
+
+
+@media (max-width: 1199px) {
+  img.finance {
+    width: 145px;
+  }
+  .text-primary {
+    font-size: 1.1em;
+  }
+  .nav-tabs > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+  }
+  .nav-tabs {
+    text-align: center;
+ /*   width: 750px;*/
+  }
+}
+
+@media (max-width: 769px) {
+  img.finance {
+    display: none;
+  }
+  .text-primary {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 546px) {
+  .text-primary {
+    font-size: 0.8em;
+  }
+  #bstrap-overrides a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 432px) {
+  #bstrap-overrides a {
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 393px) {
+  .text-primary {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 355px) {
+  .text-primary {
+    font-size: 0.6em;
+  }
+}
