@@ -566,6 +566,12 @@ ul.we-do > li > h4 {
   .header-content-inner h1 {
     text-shadow: -0.5px -0.5px 0.5px #F05F40;
   }
+  #map-container {
+    margin: 0 20px;
+  }
+  section {
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 546px) {
@@ -645,4 +651,10 @@ ul.we-do > li > h4 {
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
+}
+
+/*********** MAP ************/
+#map-container {
+  height: 300px;
+  border: solid 2px white;
 }
