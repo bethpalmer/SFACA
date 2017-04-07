@@ -131,7 +131,18 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+
+img.acc_logo {
+  position: relative;
+ /* margin-bottom: 10px;*/
+}
+
 @media (min-width: 768px) {
+ /* img.acc_logo {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 30px;
+  }*/
   .navbar-default {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
@@ -213,7 +224,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content {
     position: absolute;
-    top: 40%;
+    top: 47%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -237,27 +248,25 @@ header .header-content .header-content-inner p {
   /* *********  Addional CSS  *********** */
   header .header-content .header-content-inner h2 {
     font-size: 30px;
+    margin: 0 0;
    /* text-shadow: -1px -1px 0px #DD4040;*/
   }
-
-/*  header .header-content-inner h1 {
-    padding-top: 100px;
-  }*/
-/*  .intro {
-    margin-bottom: 100px;
+/*  img.profile {
+    margin: 30px auto;
   }*/
 }
 
-header img {
-  /*margin-bottom: 100px;*/
+img.profile {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 20px auto 80px;
   border: solid 2px #DD4040;
   border-radius: 80px;
+/*  width: 150px;*/
 }
+
+
+
+
 .section-heading {
   margin-top: 0;
 }
@@ -554,12 +563,11 @@ ul.we-do > li > h4 {
   .text-faded {
     font-size: 0.9em;
   }
-  header img {
+  /*header img {
     margin-top: 15px;
     margin-bottom: 40px;
     width: 110px;
-   /* border-radius: 80px;*/
-  }
+  }*/
   .header-content-inner h2 {
     font-size: 20px;
     margin-top: 3px;
@@ -652,6 +660,22 @@ ul.we-do > li > h4 {
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
+}
+
+footer {
+  color: white;
+  background-color: #DD4040;
+/*  vertical-align: center;*/
+}
+
+footer h4 {
+  padding: 25px 0;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
 }
 
 /*********** MAP ************/
