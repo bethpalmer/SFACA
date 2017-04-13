@@ -224,7 +224,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content {
     position: absolute;
-    top: 47%;
+    top: 44%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -258,7 +258,7 @@ header .header-content .header-content-inner p {
 
 img.profile {
   display: block;
-  margin: 20px auto 80px;
+  margin: 80px auto 100px;
   border: solid 2px #DD4040;
   border-radius: 80px;
 /*  width: 150px;*/
@@ -665,12 +665,11 @@ form .row:first-child .floating-label-form-group {
 footer {
   color: white;
   background-color: #DD4040;
-/*  vertical-align: center;*/
+  padding-bottom: 25px;
 }
-
-footer h4 {
+/*footer h4 {
   padding: 25px 0;
-}
+}*/
 footer a {
   color: white;
 }
@@ -678,6 +677,22 @@ footer a:hover {
   color: white;
 }
 
+@media (min-width: 768px) {
+  footer h4 {
+    padding: 25px 0;
+  }
+  footer {
+    padding-bottom: 0;
+  }
+}
+
+.contact a {
+  color: white;
+}
+.contact a:hover {
+  color: white;
+  text-decoration: underline;
+}
 /*********** MAP ************/
 #map-container {
   height: 300px;

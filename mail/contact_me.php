@@ -14,9 +14,12 @@ $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
+// $income = strip_tags(htmlspecialchars($_POST['income']));
+// $assets = strip_tags(htmlspecialchars($_POST['assets']));
+// $liabilities = strip_tags(htmlspecialchars($_POST['liabilities']));
 	
 // Create the email and send the message
-$to = 'bpalmer360@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'info@sfaca.co.uk'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: noreply@ysfaca.co.uk\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
